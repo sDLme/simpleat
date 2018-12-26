@@ -1,0 +1,92 @@
+.facts {
+  padding: 100px;
+  text-align: center;
+  background-color: #f0f6f4;
+}
+.facts-content {
+  position: relative;
+  margin-bottom: 40px;
+}
+.main-img {
+  position: relative;
+  text-align: center;
+}
+
+.facts-list {
+  position: absolute;
+  top: 15%;
+
+  @media (max-width: 1024px) {
+    top: 0;
+  }
+
+  &__item {
+    width: 32%;
+    margin-bottom: 40px;
+
+    &:nth-child(odd) {
+      margin-right: 10%;
+      text-align: right;
+      padding-right: 80px;
+      background-image: url("../img/energy-icon.svg");
+      background-position-x: right;
+      background-repeat: no-repeat ;
+    }
+
+    &:nth-child(even) {
+      margin-left: 25%;
+      text-align: left;
+      padding-left: 80px;
+      background-image: url("../img/vegan-icon.svg");
+      background-position-x: left;
+      background-repeat: no-repeat ;
+    }
+
+    &:nth-child(2){
+      margin-bottom: 26px;
+      padding-bottom: 20px;
+    }
+
+    &:nth-child(3){
+      position: relative;
+      right: 40px;
+      background-image: url("../img/nutr-icon.svg");
+    }
+
+    &:nth-child(4){
+      position: relative;
+      left: 40px;
+      background-image: url("../img/scient-icon.svg");
+    }
+
+    &:nth-child(5){
+      background-image: url("../img/neut-icon.svg");
+    }
+
+    &:nth-child(6){
+      background-image: url("../img/any-icon.svg");
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: 14px;
+  }
+}
+
+.download-btn {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.download-link {
+  line-height: 20px;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #78bc61;
+}

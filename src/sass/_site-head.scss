@@ -1,0 +1,32 @@
+.site-head {
+  padding: 20px 0;
+  background-color: #f0f6f4;
+  color: #121920;
+
+  @media (max-width: $desktop) {
+    &__logo,
+    &__action,
+    &__btns {
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+}
+
+.action-card {
+  padding-left: 32px;
+  padding-right: 15px;
+  background: url("../img/card-icon.svg") left no-repeat;
+}
+
+.action-contact {
+  padding: 0 15px;
+}
+
+.sign-btn {
+  padding-left: 25px;
+  padding-right: 35px;
+  background: url("../img/sing-in-icon.svg") left no-repeat;
+  background-size: contain;
+}

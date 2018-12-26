@@ -1,0 +1,41 @@
+.testimonials {
+  padding: 50px 0;
+  background-color: #f0f6f4;
+
+  .testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 0;
+
+    &__item {
+      margin-bottom: 10px;
+    }
+
+    &__box {
+      position: relative;
+    }
+
+    &__img {
+     // width: 100%;
+    }
+
+    &__text {
+      position: absolute;
+      bottom: 0;
+      padding: 15px;
+    }
+
+    &__title {
+      margin-bottom: 5px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    &__description {
+      font-size: 13px;
+      color: #ffffff;
+    }
+  }
+}

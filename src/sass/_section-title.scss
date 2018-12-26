@@ -1,0 +1,38 @@
+.section-head {
+
+}
+.section-title {
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 1;
+  font-size: $title-font-size;
+  font-family: $title-font-family;
+  font-weight: 300;
+  font-style: normal;
+  color: #121920;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    width: 35px;
+    height: 9px;
+    transform: translate(-50%);
+    background: url("../img/title-el.svg") center no-repeat;
+    background-size: contain;
+  }
+
+  &--white {
+    color: #ffffff;
+
+    &:after {
+      background: url("../img/title-el-white.svg") center no-repeat;
+    }
+  }
+}
+
+.sub-title {
+  text-align: center;
+}

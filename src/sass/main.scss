@@ -1,13 +1,17 @@
 
-// @import "base";
-// @import "btn";
-// @import "header";
-// @import "article-date";
-// @import "section";
-
-body {
-	background-color: #000000;
-	display :flex;
-	 transform: scale(1, 1);
-}
-
+@import "varibles";
+@import "reset";
+@import "typography";
+@import "base";
+@import "intro";
+@import "site-btn";
+@import "site-head";
+@import "section-title";
+@import "about";
+@import "feature";
+@import "indication";
+@import "testimonial";
+@import "facts";
+@import "ingredient";
+@import "contact";
+@import "footer";

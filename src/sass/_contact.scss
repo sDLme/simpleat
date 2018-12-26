@@ -1,0 +1,45 @@
+.contact{
+  padding: 100px 0;
+
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 50px;
+
+    @media (max-width:$desktop) {
+      flex-wrap: wrap;
+    }
+  }
+  .input-wrap {
+    width: 100%;
+    margin-right: 20px;
+
+    @media (max-width:$desktop) {
+      margin-right: 0;
+    }
+  }
+  .email {
+    width: 100%;
+    padding: 8px 20px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #121920;
+    border: 2px solid #e5e4d7;
+    border-radius: 6px;
+  }
+
+  .submit-wrap {
+    width: 40%;
+
+    @media (max-width:$desktop) {
+      margin-top: 20px;
+    }
+  }
+
+  .site-btn {
+    width: 100%;
+    font-size: 24px;
+  }
+}
