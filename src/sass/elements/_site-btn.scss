@@ -3,11 +3,12 @@
   display: inline-block;
   padding: 15px 20px;
   border-radius: 6px;
+  line-height: 1;
   font-size: $font-size-base;
   font-weight: $btn-font-width;
   font-family: $btn-font-family;
   background-color: $btn-bg;
   border: none;
   outline: none;
-  color: $btn-color;
+  color: $btn-color!important;
 }

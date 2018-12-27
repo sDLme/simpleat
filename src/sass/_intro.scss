@@ -10,7 +10,10 @@
   }
 
   &__main-img {
-    width: 100%;
+
+    @media (max-width:400px) {
+      width: 100%;
+    }
   }
 
   &__description {
@@ -60,6 +63,7 @@
       justify-content: center;
       align-items: center;
       margin-right: 20px;
+      cursor: pointer;
 
       &:after {
         display: none;
@@ -76,6 +80,7 @@
 
     &__text {
       display: inline-block;
+      cursor: pointer;
 
       &--title {
         display: block;
@@ -83,7 +88,21 @@
       }
     }
 
+    &__wrap.active {
 
+      .checkbox-box__input-wrap {
+        background-color: #36c1ba;
+
+        &:after {
+          display: inline-block;
+        }
+
+      }
+
+      .checkbox-box__text--title {
+        color: #36c1ba;
+      }
+    }
 
   }
 
@@ -101,6 +120,52 @@
   .site-btn {
     width: 48%;
     font-size: 24px;
+  }
+
+  .my-tooltip {
+    position: relative;
+  }
+
+  .my-tooltip .my-tooltiptext {
+    visibility: hidden;
+    width: 277px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 14px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 0;
+    margin-left: -60px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .my-tooltip .my-tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent;
+  }
+
+  .tooltip-link {
+    display: inline-block;
+    color: #36c1ba;
+    text-decoration: underline;
+  }
+
+  .my-tooltip:hover .my-tooltiptext {
+    visibility: visible;
+    opacity: 1;
   }
 
 

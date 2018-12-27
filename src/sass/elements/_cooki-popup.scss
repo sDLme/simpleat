@@ -1,0 +1,38 @@
+
+/*Cookie Consent Begin*/
+#cookieConsent {
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 21%;
+  border-radius: 10px;
+  background-color: #121920;
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 9999;
+
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px;
+}
+
+.cookie-content {
+  align-items: center;
+  display: flex;
+}
+.cookie-text {
+  width: 78%;
+  padding: 0 39px;
+  line-height: 14px;
+  background: url("../img/cooki-icon.svg") 2% no-repeat;
+}
+#closeCookieConsent:hover {
+  color: #FFF;
+}
+#cookieConsent a.cookieConsentOK {
+  color: #ffffff;
+}
+/*Cookie Consent End*/

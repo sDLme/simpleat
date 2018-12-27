@@ -28,6 +28,7 @@
       font-weight: 700;
       transform: translate(-50%, -50%);
       background: url("../img/play-btn.png") center no-repeat;
+      cursor: pointer;
     }
   }
 
@@ -35,11 +36,16 @@
 
 .content-box {
 
+  @media (max-width:1037px) {
+    margin: 0 auto;
+  }
+
   &:first-child {
     width: 35%;
 
-    @media (max-width: $desktop) {
+    @media (max-width: 1037px) {
       width: 100%;
+      text-align: center;
     }
   }
 }

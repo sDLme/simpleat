@@ -2,16 +2,20 @@
 @import "varibles";
 @import "reset";
 @import "typography";
-@import "base";
+@import "elements/container";
+@import "elements/main-list";
+@import "elements/site-btn";
+@import "elements/section-title";
+@import "elements/cooki-popup";
+
 @import "intro";
-@import "site-btn";
 @import "site-head";
-@import "section-title";
 @import "about";
 @import "feature";
 @import "indication";
 @import "testimonial";
 @import "facts";
 @import "ingredient";
+@import "inside";
 @import "contact";
 @import "footer";
